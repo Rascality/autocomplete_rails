@@ -1,4 +1,4 @@
-# AutocompleteRails
+# AutocompleteRails - Rascality Fork
 
 Easily set up Rails controller actions for use with jQuery UI's Autocomplete widget.
 
@@ -10,7 +10,7 @@ other autocomplete gems out there that support multiple ORMs and provide client-
 of increased complexity. `AutocompleteRails` only supports ActiveRecord, and only provides rails 
 controller functionality. Client side, you use jQuery UI's autocomplete widget, which you wire up yourself.
 
-`AutocompleteRails` supports Rails 4 and Rails 5.
+`AutocompleteRails` supports Rails 4, Rails 5 and Rails 6.
 
 [![Gem Version](https://badge.fury.io/rb/autocomplete_rails.svg)](https://badge.fury.io/rb/autocomplete_rails) ![Build status](https://travis-ci.org/tomichj/autocomplete_rails.svg?branch=master)
 
