@@ -5,13 +5,13 @@ require 'autocomplete_rails/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'autocomplete_rails'
+  s.name        = 'rs_autocomplete_rails'
   s.version     = AutocompleteRails::VERSION
-  s.authors     = ['Justin Tomich']
-  s.email       = ['justin@tomich.org']
-  s.homepage    = 'https://github.com/tomichj/autocomplete_rails'
-  s.summary     = "Easily use jQuery UI's autocomplete widget with Rails applications."
-  s.description = "Easily use jQuery UI's autocomplete widget with Rails applications."
+  s.authors     = ['Justin Tomich', 'David Sowry']
+  s.email       = ['justin@tomich.org', 'sowry@rascality.nz']
+  s.homepage    = 'https://github.com/Rascality/autocomplete_rails'
+  s.summary     = "Fork of autocomplete_rails with addded rails 6 support."
+  s.description = "Fork of autocomplete_rails with addded rails 6 support."
   s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']

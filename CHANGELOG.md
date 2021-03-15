@@ -1,5 +1,9 @@
 # AutocompleteRails Changelog
 
+
+## [0.5.0] - March 16, 2021
+- Added 6.0 gemfile
+
 ## [0.4.1] - June 8, 2018
 
 ### Cleanup
