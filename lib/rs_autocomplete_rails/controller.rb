@@ -1,7 +1,7 @@
-module AutocompleteRails
+module RsAutocompleteRails
   module Controller
     def self.included(target)
-      target.extend AutocompleteRails::Controller::ClassMethods
+      target.extend RsAutocompleteRails::Controller::ClassMethods
     end
 
     module ClassMethods

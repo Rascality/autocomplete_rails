@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 # Unit tests for autocomplete's controller module.
-describe AutocompleteRails::Controller do
+describe RsAutocompleteRails::Controller do
   before do
     class FakesController < ApplicationController
-      include AutocompleteRails::Controller
+      include RsAutocompleteRails::Controller
       autocomplete :user, :email
     end
     FakesController.send(:public, :autocomplete_select_clause, :autocomplete_where_clause, :autocomplete_order_clause,

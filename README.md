@@ -7,7 +7,7 @@ Please use [GitHub Issues] to report bugs. You can contact me directly on twitte
 
 `AutocompleteRails` is a lightweight component with easily understandable, minimal, source code. There are
 other autocomplete gems out there that support multiple ORMs and provide client-side javascript, at the cost
-of increased complexity. `AutocompleteRails` only supports ActiveRecord, and only provides rails 
+of increased complexity. `AutocompleteRails` only supports ActiveRecord, and only provides rails
 controller functionality. Client side, you use jQuery UI's autocomplete widget, which you wire up yourself.
 
 `AutocompleteRails` supports Rails 4, Rails 5 and Rails 6.
@@ -20,7 +20,7 @@ controller functionality. Client side, you use jQuery UI's autocomplete widget, 
 To get started, add the gem to your Rails app's `Gemfile`:
 
 ```ruby
-gem 'autocomplete_rails'
+gem 'rs_autocomplete_rails'
 ```
 
 And install the gem:
@@ -46,8 +46,8 @@ Once the gem is installed, there are 3 steps to set up an autocomplete:
 
 ### Controller
 
-Any controller needing an autocomplete action should invoke class method `autocomplete` with the model class and 
-method to be autocompleted as arguments. An autocomplete method is generated. Then add a route leading to your 
+Any controller needing an autocomplete action should invoke class method `autocomplete` with the model class and
+method to be autocompleted as arguments. An autocomplete method is generated. Then add a route leading to your
 generated method.
 
 For example, to autocomplete users by email address in a Posts controller:
@@ -74,7 +74,7 @@ end
 
 ### Wire up jQuery UI's autocomplete widget
 
-jQuery UI's autocomplete widget is flexible and well documented. The most basic setup: just set the widget's 
+jQuery UI's autocomplete widget is flexible and well documented. The most basic setup: just set the widget's
 `source` option to the autocomplete rails controller path you wish to access. A common way to do
 this is by setting the path to the autocomplete action in a data attribute of the input, and access it from
 coffeescript/javascript. For example:
@@ -92,8 +92,8 @@ Which creates an <input> tag that looks like this:
 ```
 
 
-A simple jQuery event handler will attach autocomplete to any input[data-autocomplete]. Pass 
-in your `autocomplete` url as the source to jQuery's autocomplete widget. Here's an example (using turbolinks) 
+A simple jQuery event handler will attach autocomplete to any input[data-autocomplete]. Pass
+in your `autocomplete` url as the source to jQuery's autocomplete widget. Here's an example (using turbolinks)
 that adds the `autocomplete` widget to the input field show above:
 
 ```coffeescript
@@ -137,7 +137,7 @@ Load the full model from the database. Default is `false`.
 
 When `full_model` is `false`, only the `value_method` and `label_method` are selected from the database.
 
-Example: your `label_method` is `first_and_last_name`, which is composed of multiple columns from your database. 
+Example: your `label_method` is `first_and_last_name`, which is composed of multiple columns from your database.
 Load the full model to allow the method to be called:
 
 ```ruby
@@ -162,7 +162,7 @@ end
 
 ### case_sensitive
 
-If set to true, a case-sensitive search is performed. Defaults to false, performing a case-insensitive search. 
+If set to true, a case-sensitive search is performed. Defaults to false, performing a case-insensitive search.
 
 ```ruby
 class PostsController < ApplicationController
@@ -187,7 +187,7 @@ end
 
 ### scopes
 
-Build your autocomplete query from the specified ActiveRecord scope(s). Multiple scopes can be used, 
+Build your autocomplete query from the specified ActiveRecord scope(s). Multiple scopes can be used,
 pass them in as an array.
 
 ```ruby
@@ -219,4 +219,3 @@ This project rocks and uses MIT-LICENSE.
 [GitHub Issues]: https://github.com/tomichj/autocomplete_rails/issues
 [jquery-rails]: https://github.com/rails/jquery-rails
 [jquery-ui-rails]: https://github.com/joliss/jquery-ui-rails
-

@@ -1,5 +1,7 @@
 # AutocompleteRails Changelog
 
+## [0.5.1] - March 16, 2021
+- Updated filenames to have rs_ prefix.
 
 ## [0.5.0] - March 16, 2021
 - Added 6.0 gemfile
