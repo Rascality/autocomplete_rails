@@ -1,4 +1,6 @@
 # AutocompleteRails Changelog
+## [0.5.3] - Nov 21, 2024
+- Update version to allow for later versions of rails.
 
 ## [0.5.1] - March 16, 2021
 - Updated filenames to have rs_ prefix.

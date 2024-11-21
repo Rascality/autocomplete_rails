@@ -14,6 +14,10 @@ appraise "5.2" do
   gem "rails", "~> 5.2.0"
 end
 
+appraise "5.3" do
+  gem "rails", ">= 6", "< 9"
+end
+
 appraise "6.0" do
-  gem "rails", ">= 6", "< 7"
+  gem "rails", ">= 6", "< 9"
 end
